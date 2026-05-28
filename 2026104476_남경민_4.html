@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="남경민">
+        <meta name="description" content="컴퓨터공학과 26학번 남경민의 자기소개 웹페이지입니다. ">
+        <meta name="keywords" content="관심분야, 취미활동, 강의시간표">
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="index,follow">
+        <title>자기소개</title>
+        <style>
+          html, body {
+            padding: 0px;
+            margin: 0px;
+            height: 100%;
+            background-color: aliceblue;
+          }
+          header { 
+            height: 10%;
+            background : yellow;
+            overflow: hidden;
+            border-bottom: 1px solid black;
+          }
+          section {
+            width : 80%; 
+            height : 82%;
+            background : lightblue;
+            float: left;
+            overflow: hidden; 
+          }
+          footer {
+            height : 8%;
+            background : plum;
+            clear: left;
+            overflow: hidden; 
+            border-radius: 10px;
+            border: 1px solid orange;
+          }
+          nav {
+            width : 20%; 
+            height : 82%;
+            background : orange;
+            float: left;
+            overflow: hidden; 
+          }
+          h1 {
+            color: brown;
+            text-align: center;
+            margin: 15px 0 0 0;
+          }
+          h2 {
+            color: blue;
+            text-shadow: 2px 2px 4px gray;
+            margin-top: 5px;
+          }
+          ul {
+            border: 1px dotted black;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          a {
+            text-decoration: none;
+          }
+          p {
+            font-family: '휴먼편지체', cursive;
+            font-size: 1em;
+            text-indent: 1em;
+            margin: 5px 0;
+          }
+          .timetable {
+            width: 100%;
+            table-layout: fixed; 
+            border-collapse: collapse;
+            text-align: center;
+            background-color: white;
+          }
+          .timetable th, .timetable td {
+            border: 1px solid lightgray; 
+            padding: 10px;
+            height: 55px; 
+            vertical-align: middle;
+          }
+          .timetable thead th {
+            background-color: aquamarine; 
+            color: black;
+            font-weight: bold;
+          }
+          .timetable tbody th {
+            background-color: whitesmoke;
+            color: darkgray;
+            font-size: 0.9rem;
+          }
+          .timetable tbody tr:nth-child(even) td {
+            background-color: white; 
+          }
+          .timetable tbody tr:nth-child(odd) td {
+            background-color: blanchedalmond; 
+          }
+          .timetable tbody tr:hover {
+            background-color: pink;
+          }
+          .scroll-container {
+            height: 100%;
+            overflow-y: auto;
+            padding: 15px;
+            box-sizing: border-box;
+          }
+          .hobby-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+          }
+          .hobby-table th, .hobby-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <h1>About me</h1>
+            </div>
+        </header>
+        <nav>
+            <div class="scroll-container" style="padding: 10px;">
+                <div id="navigation">
+                    <h2>목차</h2>
+                    <ul>
+                        <li><p><a href="#관심분야"><span style="color:green">관심분야</span></a></p></li>
+                        <li><p><a href="#취미활동"><span style="color:purple">취미활동</span></a></p></li>
+                        <li><p><a href="#강의시간표"><span style="color:brown">강의시간표</span></a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="scroll-container">
+                <div style="background-color:skyblue; padding:20px; border-radius: 8px; margin-bottom: 20px;">
+                    <p style="margin:0; text-indent: 0;">안녕하세요 저는 <span style="color:rgb(250, 92, 1); font-weight: bold;">컴퓨터공학과 26학번 남경민</span>입니다.</p>
+                    <p style="margin:5px 0 0 0; text-indent: 0;">이 웹페이지는 제 <span style="color:green; font-weight: bold;">관심분야</span>와 <span style="color:purple; font-weight: bold;">취미활동</span>, 그리고 <span style="color:brown; font-weight: bold;">강의시간표</span>를 소개하는 웹페이지입니다. 감사합니다!</p>
+                </div>
+                <div id="container">
+                    <article>
+                        <h2 id="관심분야">관심분야</h2>
+                        <hr>
+                        <ul>
+                            <li><p>여행</p>
+                                <ul>
+                                    <li><p>저는 다양한 경험을 하고 자연을 좋아하기 때문에 <b>여행</b>을 좋아합니다.</p></li>
+                                    <li><p><img src="media/여행.jpg" width="150" height="150" alt="여행"></p></li>
+                                    <li><p>제가 가고 싶은 여행지는 <strong>스위스</strong>와 <strong>노르웨이</strong>입니다.</p></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><p>영화</p>
+                                <ul>
+                                    <li><p>제가 좋아하는 <b>영화</b>장르는 스릴러와 드라마입니다.</p></li>
+                                    <li><p><img src="media/영화.jpg" width="150" height="150" alt="영화"></p></li>
+                                    <li><p>제가 감명 깊게 본 영화는 <strong>이터널선샤인</strong>과 <strong>트루먼쇼</strong>입니다.</p></li>     
+                                </ul>
+                            </li>  
+                        </ul>
+                        <ul>
+                            <li><p>빅데이터</p>
+                                <ul>
+                                    <li><p><b>빅데이터</b>는 기존 방식으로 처리하기 어려울 만큼 방대한 규모, 다양성, 속도를 가진 데이터의 집합입니다.</p></li>
+                                    <li><p>대용량, 다양성, 속도를 중심으로 가치와 정확성을 포함한다는 특징이 있습니다.</p></li>
+                                    <li><p>소비자 맞춤 추천, 교통상황 및 날씨 예측, 질병 진단 등의 분야에서 활용되는 중입니다.</p></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article style="margin-top: 30px;">
+                        <h2 id="취미활동">취미활동</h2>
+                        <hr>
+                        <table class="hobby-table">
+                            <tr>
+                                <th style="width: 30%;">취미</th>
+                                <th>설명</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="media/사진.JPG" alt="사진" width="150" height="150">
+                                </td>
+                                <td>
+                                    <p style="text-indent: 0;">전 풍경 사진 찍는 걸 좋아합니다.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="media/음식.JPG" alt="음식" width="150" height="150">
+                                </td>
+                                <td>
+                                    <p style="text-indent: 0;">맛있는 음식을 먹기 위해 여행을 다닙니다.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <video src="media/운동.mp4" width="150" height="150" controls></video>
+                                </td>
+                                <td>
+                                    <p style="text-indent: 0;">운동을 좋아합니다. 헬스 뿐만이 아니라 구기종목에도 관심이 많습니다.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </article>
+                    <article style="margin-top: 30px; margin-bottom: 20px;">
+                        <h2 id="강의시간표">강의시간표</h2>
+                        <hr>
+                        <table class="timetable">
+                            <caption><b>강의 시간표</b></caption>
+                            <thead>
+                                <tr>
+                                    <th>교시</th>
+                                    <th>월요일</th>
+                                    <th>화요일</th>
+                                    <th>수요일</th>
+                                    <th>목요일</th>
+                                    <th>금요일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>09:00 - 09:50</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>10:00 - 10:50</th>
+                                    <td></td>
+                                    <td>프로그래밍언어실습&#8544;</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>11:00 - 11:50</th>
+                                    <td></td>
+                                    <td>프로그래밍언어실습&#8544;</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>인성채플</td>
+                                </tr>
+                                <tr>
+                                    <th>12:00 - 12:50</th>
+                                    <td></td>
+                                    <td>프로그래밍언어실습&#8544;</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>13:00 - 13:50</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>컴퓨터과학개론(13:25)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>14:00 - 14:50</th>
+                                    <td>SW개발문제해결능력</td>
+                                    <td></td>
+                                    <td>인터넷콘텐츠</td>
+                                    <td>컴퓨터과학개론</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>15:00 - 15:50</th>
+                                    <td>SW개발문제해결능력</td>
+                                    <td></td>
+                                    <td>인터넷콘텐츠</td>
+                                    <td>컴퓨터과학개론(16:25)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>16:00 - 16:50</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>인터넷콘텐츠</td>
+                                    <td></td>
+                                    <td>음악과 힐링</td>
+                                </tr>
+                                <tr>
+                                    <th>17:00 - 17:50</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>음악과 힐링</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>        
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p><a href="survey4.html" target="_blank" style="color: blue; text-decoration: underline;">설문조사</a></p>
+            <p>Copyright 2026 by MYOUNGJI COLLEGE</p>
+        </footer> 
+    </body>
+</html>
